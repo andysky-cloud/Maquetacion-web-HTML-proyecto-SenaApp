@@ -1,0 +1,57 @@
+/* FOOTER */
+footer {
+    background: var(--azul-noche);
+    padding: 60px 5% 24px;
+}
+
+/* Grid de 5 columnas, la primera más ancha */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; /* 2fr el doble de ancho */
+    gap: 48px;
+    margin-bottom: 40px;
+}
+
+footer h5 {color: var(--texto);text-transform: uppercase;margin-bottom: 12px;}
+footer ul {list-style: none;}
+footer ul li {margin-bottom: 8px;}
+footer ul a {color: var(--gris);}
+footer ul a:hover {color: var(--texto);}
+
+.badge-footer {
+    background: var(--amarillo);
+    color: #000000;
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    border-radius: 20px; /* capsula */
+    margin-left: 6px;
+}
+
+/* Barra inferior: legal izquierda, redes derecha */
+.footer-inferior {
+    display: flex;
+    justify-content: space-between; /* empuja los grupos a los extremos */
+    align-items: center;
+    padding-top: 24px;
+    border-top: 1px solid var(--borde);
+}
+
+.footer-legal {display: flex;gap: 16px;}
+.footer-legal a {color: var(--gris);font-size: 0.82rem;}
+.footer-legal a:hover {color: var(--texto);}
+
+.footer-redes {display: flex; gap: 10px;}
+.footer-redes a {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%; /* circulo */
+    border: 1px solid var(--borde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gris);
+}
+
+.footer-redes a:hover {background: var(--azul);color: #000000;}
+
+.footer-copy {text-align: center; color: var(--gris); padding-top: 12px;}
